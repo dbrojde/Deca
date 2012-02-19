@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>DECA</title>
+
+<script type="text/javascript">
+function chkcontrol(j) {
+var total=0;
+for(var i=0; i < document.form1.ckb.length; i++){
+if(document.form1.ckb[i].checked){
+total =total +1;}
+if(total > 2){
+alert("Please Select only two.")
+document.form1.ckb[j].checked = false ;
+return false;
+}
+}
+} </script>
+</head>
+
+<body bgcolor="ffffff">
+	<h1 ALIGN="CENTER" > <img src="DECAlogo.jpg" width="300" height="100"> </h1>
+	<hr width="95%" size="8" color=#000000 /><br>
+	<h2><u>List of Schools</u></h2>
+	<strong>Choose a school from the list below:</strong><br>
+		<SELECT NAME=sections size=1 >
+		<option> </option>
+		<option>Broward College - Central Campus </option>
+		<option>Broward College - North Campus </option>
+		<option>Broward College - South Campus </option>
+		<option>Everest University - Pompano Beach </option>
+		<option>Florida A&M University </option>
+		<option>Florida Atlantic University - Davie </option>
+		<option>Florida Atlantic University - Boca Raton </option>
+		<option>Florida Satallite Chapter </option>
+		<option>Hillsborough Community College - Ybor City Campus </option>
+		<option>Indian River State College </option>
+		<option>Johnson & Wales University </option>
+		<option>Lynn University </option>
+		<option>Miami Dade College - North Campus </option>
+		<option>Mid-Florida Technical Institute </option>
+		<option>Northwood University </option>
+		<option>Nova Southeastern University </option>
+		<option>Pasco Hernando Community College </option>
+		<option>Rasmussen College - Fort Myers </option>
+		<option>Rasmussen College - New Port Richey </option>
+		<option>Rasmussen College - Ocala </option>
+		<option>Rasmussen College - Tampa/Brandon </option>
+		<option>University of Central Florida </option>
+		<option>University of Florida </option>
+		<option>University of Miami </option>
+		</select><br><br>
+		
+	<h2><u>List of Events</u></h2>
+	<strong>Choose an event from the list below:</strong><br>
+	<form name=form1 method=post action=checkTEST.php>	
+		<SELECT NAME=sections size=1 >
+		<option> </option>
+		<option>Advertising Design </option>
+		<option>Business Ethics </option>
+		<option>Business Law </option>
+		<option>Human Resource Management </option>
+		<option>Business-to-Business Marketing </option>
+		<option>Entrepreneurship </option>
+		<option>Financial Statement Analysis </option>
+		<option>Business Resource Management </option>
+		<option>International Marketing </option>
+		<option>Marketing Management </option>
+		<option>Professional Sales </option>
+		<option>Sales Management Meeting </option>
+		<option>Sports & Entertainment Marketing </option>
+		<option>Website Design </option>
+		<option>Culinary Arts </option>
+		<option>Criminal Justice </option>
+		<option>Accounting </option>
+		<option>Corporate Finance </option>
+		<option>Fashion Merchandising & Marketing </option>
+		<option>Hotel & Lodging </option>
+		<option>Restaurant & Food Service Management </option>
+		<option>Retail Management </option>
+		<option>Travel & Tourism </option>
+		</select><br><br>
+	
+	<h2><u>Student Information</u></h2>
+	<strong>Input student's information below:<br></strong><br>
+		Student #1: &nbsp;
+		<label for="first_name">First Name:</label>
+		<input type="text" id="first_name" name="first_name" />
+		<label for="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="last_name" />
+		<label for="middle_name">Middle Initial:</label>
+        <input type="text" name="middle_name" />
+
+		
+			
+	<p></p>
+	
+	<input type="submit" name="Next" value="Next Student" /><br><br>
+	<input type="submit" name="Finish" value="Finish" /><br><br>
+	</form>
+	
+		
+		
+</body>
+
+</html>	
+
